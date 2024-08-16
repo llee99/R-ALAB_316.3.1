@@ -56,9 +56,10 @@
       console.log(Event.target.textContent);
     });
 
-    const subMenuEl = document.getElementById("sub-menu");
-    subMenuEl.style.height = "100%";
-    subMenuEl.style.backgroundColor = 'var(--sub-menu-bg)';
+
+    const subMenuEl = document.getElementById("sub-menu");        // Cache the sub-menu
+    subMenuEl.style.height = "100%";                             // Set height
+    subMenuEl.style.backgroundColor = 'var(--sub-menu-bg)';     // Set background color
     subMenuEl.style.position = "absolute";
     subMenuEl.style.top = "0";
     subMenuEl.classList.add("flex-around");
